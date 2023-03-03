@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-1.css">
+    <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="con-3.css">
+    <link rel="stylesheet" href="con-4.css">
+    <link rel="stylesheet" href="con-6.css">
+    <link rel="stylesheet" href="con-7.css">
+    <link rel="stylesheet" href="con-8.css">
+    <link rel="stylesheet" href="con-9.css">
+    <title>DP</title>
+</head>
+<body>
+    
+    <div class="con-0">
+        <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+
+        <style>
+            body {
+                font-family: 'Josefin Sans', sans-serif;
+                box-sizing: border-box;
+            }
+            .background {
+                background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+                background-size: 400% 400%;
+                animation: Gradient 15s ease infinite;
+                position: relative;
+                height: 100vh;
+                width: 100%;
+                overflow: hidden;
+                padding:0;
+                margin:0px;
+            }
+            .cube {
+                position: absolute;
+                top: 80vh;
+                left: 45vw;
+                width: 10px;
+                height: 10px;
+                border: solid 1px #D7D4E4;
+                transform-origin: top left;
+                transform: scale(0) rotate(0deg) translate(-50%, -50%);
+                animation: cube 12s ease-in forwards infinite;
+            }
+            .cube:nth-child(2n) {
+                border-color: #FFF ;
+            }
+            .cube:nth-child(2) {
+                animation-delay: 2s;
+                left: 25vw;
+                top: 40vh;
+            }
+            .cube:nth-child(3) {
+                animation-delay: 4s;
+                left: 75vw;
+                top: 50vh;
+            }
+            .cube:nth-child(4) {
+                animation-delay: 6s;
+                left: 90vw;
+                top: 10vh;
+            }
+            .cube:nth-child(5) {
+                animation-delay: 8s;
+                left: 10vw;
+                top: 85vh;
+            }
+            .cube:nth-child(6) {
+                animation-delay: 10s;
+                left: 50vw;
+                top: 10vh;
+            }
+
+            @keyframes Gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            @keyframes cube {
+                from {
+                    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+                    opacity: 1;
+                }
+                to {
+                    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+                    opacity: 0;
+                }
+            }
+        </style>
+    </div>
+
+
+
+    <header class="header">
+        <div class="logotype">
+            <img src="img/logotyp.png" alt="" class="logotype-header">
+            <p class="name">Digital<br>partners</p>
+        </div>
+        <div class="phone-1">
+            <a href="tel:+992888846838" class="tell">+992888845838</a><br>
+            <a class="tell-2" data-target="#callme" data-toggle="modal">Call me</a>
+        </div>
+        <br><br>
+    </header>
+
+
+    <div class="container-1">
+        
+        <div class="name-1">
+            <br><br><br>
+            <h1 class="h1-1"><b>Lorem ipsum dolor sit amet consectetur adipisicing.</b></h1>
+            <h3 class="h3-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3><br>
+        </div>
+        <div class="icon">
+            <center>
+                <div class="icons" data-wow-delay="0.1s">
+                    <img src="img/01.png" class="mainicons" alt="" width="100px" height="60px">
+                    <p class="mainicons-2">Lorem ipsum dolor sit amet <br> consectetur adipisicing.</p>
+                </div>
+
+                <div class="icons" data-wow-delay="0s">
+                    <img src="img/01.png" class="mainicons" alt="" width="100px" height="60px">
+                    <p class="mainicons-2">Lorem ipsum dolor sit <br> amet consectetur.</p>
+                </div>
+
+                <div class="icons" data-wow-delay="0.2s">
+                    <img src="img/01.png" class="mainicons" alt="" width="100px" height="60px">
+                    <p class="mainicons-2">Lorem ipsum dolor <br> sit amet consectetur.</p>
+                </div>
+            </center>
+        </div>
+              
+        <form class="form">
+            <h4 class="h4-1">Lorem ipsum dolor sit, <br> amet consectetur adipisicing.</h4>
+            <input type="tel" class="phone" placeholder="Введите номер телефона" style="border-radius: 20px 0 0 20px;">
+            <input type="submit" name="submit" class="submit" value="Получить стратегию" style="border-radius: 0 20px 20px 0;">
+        </form>
+
+
+    </div>
+
+
+    <div class="container-2">
+
+        <h1 style="display: block; position: absolute; margin-top: -500px; text-align: center; padding-left: 550px;">Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+
+		<div class="slider-2">
+			<input type="radio" name="slider" id="t-1">
+			<input type="radio" name="slider" id="t-2" checked>
+			<input type="radio" name="slider" id="t-3">
+			<input type="radio" name="slider" id="t-4">
+			<div class="sliders">
+				<label class="item" for="t-1">
+					<h2>Web Аналитика</h2>
+					<img alt="" src="img/check.png" class="ch"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, excepturi.</p>
+				</label>
+				<label class="item" for="t-2">
+					<h2>Продвижение в соц. сетях</h2>
+					<img alt="" src="img/check.png" class="ch"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quia!</p>
+				</label>
+				<label class="item" for="t-3">
+					<h2>Контекстная реклама</h2>
+					<img alt="" src="img/check.png" class="ch"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis!</p>
+				</label>
+				<label class="item" for="t-4">
+					<h2>SEO продвижение</h2>
+					<img alt="" src="img/check.png" class="ch"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis!</p>
+				</label>
+			</div>
+			<div class="dots-2">
+				<label for="t-1"></label>
+				<label for="t-2"></label>
+				<label for="t-3"></label>
+				<label for="t-4"></label>
+			</div>
+		</div>
+    
+    </div>
+
+
+    <div class="container-3">
+        <div class="block-title">
+        <h3 class="title-3">Исследуем<br>разрабатываем<br>внедряем</h3>
+        </div>
+    
+        <div class="active slider" style="background: linear-gradient(#752af7, #4e3a6e); width: 100%; height: 600px;">
+            <div class="mySlides fade">
+                <img alt="" src="img/megasaun.png" class="img-3">
+                <div class="text">
+                    <h4 style="padding-top: 100px; font-size: 30px; color: #fff;">Text Text-1</h4>
+                    <p>
+                    <b>Задача:</b><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae.
+                    <br><br>
+                    <b>Решение:</b><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nihil?
+                    <br><br>
+                    <b>Результат:</b><br>
+                    Lorem ipsum dolor sit amet.
+                    </p><br>
+                
+                    <a href="#"><button class="button-3">Посмотреть кейс</button></a>
+                    <br><br>
+                    <button data-toggle="modal" data-target="#kp" class="slide-button-3" style="background-color: rgb(71, 143, 226);">Получить коммерческое предложение</button>
+                </div> 
+            </div>
+            
+            <div class="mySlides fade">
+                <img alt="" src="img/megasaun.png" class="img-3">
+                <div class="text">
+                    <h4 style="padding-top: 100px; font-size: 30px; color: rgb(224, 117, 228);">Text Text-2</h4>
+                    <p>
+                    <b>Задача:</b><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae.
+                    <br><br>
+                    <b>Решение:</b><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nihil?
+                    <br><br>
+                    <b>Результат:</b><br>
+                    Lorem ipsum dolor sit amet.
+                    </p><br>
+                
+                    <a href="#"><button class="button-3">Посмотреть кейс</button></a>
+                    <br><br>
+                    <button data-toggle="modal" data-target="#kp" class="slide-button-3" style="background-color: rgb(71, 143, 226);">Получить коммерческое предложение</button>
+                </div> 
+            </div>
+
+            <div class="mySlides fade">
+                <img alt="" src="img/megasaun.png" class="img-3">
+                <div class="text">
+                    <h4 style="padding-top: 100px; font-size: 30px; color: rgb(97, 145, 53);">Text Text-3</h4>
+                    <p>
+                    <b>Задача:</b><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae.
+                    <br><br>
+                    <b>Решение:</b><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nihil?
+                    <br><br>
+                    <b>Результат:</b><br>
+                    Lorem ipsum dolor sit amet.
+                    </p><br>
+                
+                    <a href="#"><button class="button-3">Посмотреть кейс</button></a>
+                    <br><br>
+                    <button data-toggle="modal" data-target="#kp" class="slide-button-3" style="background-color: rgb(71, 143, 226);">Получить коммерческое предложение</button>
+                </div> 
+            </div>
+
+
+            <div class="mySlides fade">
+                <img alt="" src="img/megasaun.png" class="img-3">
+                <div class="text">
+                    <h4 style="padding-top: 100px; font-size: 30px; color: rgb(172, 170, 46);">Text Text-4</h4>
+                    <p>
+                    <b>Задача:</b><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae.
+                    <br><br>
+                    <b>Решение:</b><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nihil?
+                    <br><br>
+                    <b>Результат:</b><br>
+                    Lorem ipsum dolor sit amet.
+                    </p><br>
+                
+                    <a href="#"><button class="button-3">Посмотреть кейс</button></a>
+                    <br><br>
+                    <button data-toggle="modal" data-target="#kp" class="slide-button-3" style="background-color: rgb(71, 143, 226);">Получить коммерческое предложение</button>
+                </div> 
+            </div>
+
+
+            <div class="mySlides fade">
+                <img alt="" src="img/megasaun.png" class="img-3">
+                <div class="text">
+                    <h4 style="padding-top: 100px; font-size: 30px; color: rgb(114, 58, 58);">Text Text-5</h4>
+                    <p>
+                    <b>Задача:</b><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae.
+                    <br><br>
+                    <b>Решение:</b><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nihil?
+                    <br><br>
+                    <b>Результат:</b><br>
+                    Lorem ipsum dolor sit amet.
+                    </p><br>
+                
+                    <a href="#"><button class="button-3">Посмотреть кейс</button></a>
+                    <br><br>
+                    <button data-toggle="modal" data-target="#kp" class="slide-button-3" style="background-color: rgb(71, 143, 226);">Получить коммерческое предложение</button>
+                </div> 
+            </div>
+        </div>
+
+
+        
+        
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+
+    </div>
+
+
+    <div class="container-4">
+        <div class="title-4">
+            <h2 class="block-title-4">Внедряем полноценный отдел маркетинга<br>по цене одного маркетолога</h3>
+        </div><br><br>
+    
+        <div class="new" data-wow-delay="0.15s">
+    
+            <div class="info">
+                <div class="info-cls">
+                  <p class="bold">Базовый</p>
+                  <p style="text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, deleniti.</p>
+                  <p class="bold">от 2000$$</p>
+                  <button data-toggle="modal" class="submit-1">Button</button>
+                </div>
+    
+                <div class="info-cls">
+                    <p class="bold">Комплекс</p>
+                    <p style="text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, deleniti.</p>
+                    <p class="bold">от 2000$$</p>
+                    <button data-toggle="modal" class="submit-1">Button</button>
+                </div>
+    
+                <div class="info-cls">
+                    <p class="bold">Продвинутый</p>
+                    <p style="text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, deleniti.</p>
+                    <p class="bold">от 2000$$</p>
+                    <button data-toggle="modal" class="submit-1">Button</button>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+
+
+    <div class="container-6">
+        <div class="title-6">
+            <h3 class="block-title-6">Lorem ipsum dolor <br> sit amet consectetur adipisicing elit.</h3>
+        </div>
+        <br><br>
+        <div class="new-6">
+            <div class="img-6" data-wow-delay="0s">
+                <img alt="" src="img/check1.png" class="new-icons">
+                <h4 class="name-6" style="font-size: 25px;">Геотаргетинг</h4>
+                <p class="info-6">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.</p>
+            </div>
+            <div class="img-6" data-wow-delay="0.05s">
+                <img alt="" src="img/check1.png" class="new-icons">
+                <h4 class="name-6" style="font-size: 25px;">Сквозная<br>аналитика</h4>
+                <p class="info-6">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.</p>
+            </div>
+            <div class="img-6" data-wow-delay="0.1s">
+                <img alt="" src="img/check1.png" class="new-icons">
+                <h4 class="name-6" style="font-size: 25px;">Сплит А/Б<br>тестирование</h4>
+                <p class="info-6">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+            </div>
+            <div class="img-6-1" data-wow-delay="0.15s">
+                <img alt="" src="img/check1.png" class="new-icons">
+                <h4 class="name-6" style="font-size: 25px;">4U + CTA</h4>
+                <p class="info-6">Lorem, ipsum dolor sit <br> amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="img-6-1" data-wow-delay="0.2s">
+                <img alt="" src="img/check1.png" class="new-icons">
+                <h4 class="name-6" style="font-size: 25px;">Сервисы повышения<br> конверсии</h4>
+                <p class="info-6">Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-7">
+        <div class="title-7">
+          <h3 class="block-title-7">Lorem ipsum dolor sit amet.</h3>
+        </div>
+            <div class="new-7">
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+                <div class="img-7" data-wow-delay="0s">
+                    <div class="new-icons-7-1">
+                        <img alt="" src="img/01.png" class="new-icons-7">
+                    </div> 
+                  <h4 class="bold-text">01/<br>Text</h4>
+                  <p style="margin-top: -25px; color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+                </div>
+
+      
+                
+            </div>
+    </div>
+
+    <!-- Для контейнера  8-->
+
+    <div style="margin-top: 570px;">
+        <div class="background">
+            <div class="cube-2"></div>
+            <div class="cube-2"></div>
+            <div class="cube-2"></div>
+            <div class="cube-2"></div>
+            <div class="cube-2"></div>
+        </div>
+
+        <style>
+            .background {
+                background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+                background-size: 400% 400%;
+                animation: Gradient 15s ease infinite;
+                position: relative;
+                height: 100vh;
+                width: 100%;
+                overflow: hidden;
+                padding:0;
+                margin:0px;
+            }
+            .cube-2 {
+                position: absolute;
+                top: 80vh;
+                left: 45vw;
+                width: 10px;
+                height: 10px;
+                border: solid 1px #D7D4E4;
+                border-radius: 50%;
+                transform-origin: top left;
+                transform: scale(0) rotate(0deg) translate(-50%, -50%);
+                animation: cube 12s ease-in forwards infinite;
+            }
+            .cube-2:nth-child(2n) {
+                border-color: #FFF ;
+            }
+            .cube-2:nth-child(2) {
+                animation-delay: 2s;
+                left: 25vw;
+                top: 40vh;
+            }
+            .cube-2:nth-child(3) {
+                animation-delay: 4s;
+                left: 75vw;
+                top: 50vh;
+            }
+            .cube-2:nth-child(4) {
+                animation-delay: 6s;
+                left: 90vw;
+                top: 10vh;
+            }
+            .cube-2:nth-child(5) {
+                animation-delay: 8s;
+                left: 10vw;
+                top: 85vh;
+            }
+            .cube-2:nth-child(6) {
+                animation-delay: 10s;
+                left: 50vw;
+                top: 10vh;
+            }
+
+            @keyframes Gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            @keyframes cube-2 {
+                from {
+                    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+                    opacity: 1;
+                }
+                to {
+                    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+                    opacity: 0;
+                }
+            }
+        </style>
+    </div>
+
+    <div class="container-8">
+        <div class="title-8">
+          <h3 class="block-title-8">Lorem ipsum dolor sit amet.</h3>
+        </div>
+            <div class="new-8" id="icons">
+    
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.1s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.2s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.3s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0s" alt=""><br>
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.1s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.2s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.3s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.1s" alt=""><br>
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.2s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.2s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.1s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.2s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.3s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0s" alt=""><br>
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.1s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.2s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.3s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.1s" alt=""><br>
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.2s" alt="">
+              <img src="img/1C.png" class="new-icons-8" data-wow-delay="0.2s" alt="">
+    
+            </div>
+    </div>
+
+
+    <div class="container-sub-9">
+        <div class="title-9"><p class="block-title-9">Ознакомьтесь с отзывами</p></div>
+    </div>
+
+    <div class="container-9">
+        
+        <div class="slide-9" style="background-image: url('img/письмо.jpg'); background-size: 700px;">
+            <h3 style="padding-left: 150px;">OOO Text <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h3>           
+        </div>
+        <div class="slide-9" style="background-image: url('img/письмо.jpg'); background-size: 700px;">
+            <h3 style="padding-left: 150px;">OOO Text <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h3>            
+        </div>
+        <div class="slide-9" style="background-image: url('img/письмо.jpg'); background-size: 700px;">
+            <h3 style="padding-left: 150px;">OOO Text <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+            </h3>            
+        </div>
+        <div class="slide-9" style="background-image: url('img/письмо.jpg'); background-size: 700px;">
+            <h3 style="padding-left: 150px;">OOO Text <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h3>           
+        </div>
+
+        <div class="slide-9" style="background-image: url('img/письмо.jpg'); background-size: 700px;">
+            <h3 style="padding-left: 150px;">OOO Text <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h3>            
+        </div>
+
+        <div class="slide-9" style="background-image: url('img/письмо.jpg'); background-size: 700px;">
+            <h3 style="padding-left: 150px;">OOO Text <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h3>            
+        </div>
+    </div>
+<!--скрипт для 9-го контейнера-->
+<script>
+
+function slidesPlugin(activeSlide = 0) {
+
+const slides = document.querySelectorAll('.slide-9')
+
+slides[activeSlide].classList.add('active')
+
+for (const slide of slides) {
+    slide.addEventListener('click', () => {
+    removeActiveClasses()
+
+   slide.classList.add('active')
+   })
+}
+
+function removeActiveClasses() {
+    slides.forEach((slide) => {
+    slide.classList.remove('active')
+    })
+}
+}
+slidesPlugin()
+
+
+</script>
+
+
+<footer>
+    <div class="footer">
+        <ul>
+            <li><a href="#" target="blank"> <img src="img/facebook.png" alt="" style="width: 60px; height: 60px;"> </a>
+            </li>
+            <li><a href="#" target="blank"> <img src="img/telegram.png" alt="" style="width: 55px; height: 50px; border-radius: 50%;"> </a>
+            </li>
+            <li><a href="#" target="blank"> <img src="img/instagram.png" alt="" style="width: 55px; height: 50px; border-radius: 50%;"> </a>
+            </li>
+            <li><a href="#"> <img src="img/twitter.png" alt="" style="width: 60px; height: 60px;"> </a>
+            </li>
+        </ul>
+    </div>
+
+    <style>
+        .footer{
+            margin-top: 200px;
+        }
+        .footer ul{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+        }
+        
+        .footer ul li{
+            list-style: none;
+            margin: 0 15px;
+        }
+        
+        .footer ul li a{
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #fff;
+            text-align: center;
+            transition: .6s;
+            box-shadow: 0 5px 4px rgba(0,0,0,.5);
+        }
+        
+        .footer ul li a:hover{
+            transform: translate(0, -10%);
+        }
+        
+        .footer ul li:nth-child(1) a:hover{
+            background-color: rgba(0, 0, 0, 0.829);
+        }
+        .footer ul li:nth-child(2) a:hover{
+            background-color: #000;
+        }
+        .footer ul li:nth-child(3) a:hover{
+            background-color: #000;
+        }
+        .footer ul li:nth-child(4) a:hover{
+            background-color: #000;
+        }
+        
+    </style>
+</footer>
+
+
+<script src="con-4.js"></script>
+</body>
+</html>

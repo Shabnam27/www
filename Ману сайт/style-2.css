@@ -1,0 +1,117 @@
+.container-2 {
+	margin: 0;
+	background-image: linear-gradient(90deg, #9e87f3, #0B0320);
+	color: #fff;
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+.slider-2 {
+	width: 100%;
+	margin-left: 15%;
+}
+.slider-2 input {
+	display: none;
+}
+.sliders {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 350px;
+	perspective: 1000px;
+	overflow: hidden;
+}
+.sliders .item {
+	width: 450px;
+	padding: 30px;
+	border-radius: 5px;
+	background-color: #311f61;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	text-align: center;
+	transition: transform 0.4s;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	user-select: none;
+	cursor: pointer;
+}
+.sliders .item img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 13px solid #3B344D;
+}
+.sliders .item p {
+	color: #ddd;
+}
+.sliders .item h2 {
+	font-size: 24px;
+}
+.dots-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -200px;
+}
+.dots-2 label {
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #413B52;
+	margin-left: 10px;
+	transition-duration: 0.2s;
+}
+
+#t-1:checked ~ .dots-2 label[for="t-1"],
+#t-2:checked ~ .dots-2 label[for="t-2"],
+#t-3:checked ~ .dots-2 label[for="t-3"],
+#t-4:checked ~ .dots-2 label[for="t-4"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-1:checked ~ .dots-2 label[for="t-2"],
+#t-2:checked ~ .dots-2 label[for="t-1"],
+#t-2:checked ~ .dots-2 label[for="t-3"],
+#t-3:checked ~ .dots-2 label[for="t-2"],
+#t-3:checked ~ .dots-2 label[for="t-4"],
+#t-4:checked ~ .dots-2 label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-1:checked ~ .sliders label[for="t-3"],
+#t-2:checked ~ .sliders label[for="t-4"],
+#t-3:checked ~ .sliders label[for="t-1"],
+#t-4:checked ~ .sliders label[for="t-2"] {
+	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+	z-index: 2;
+}
+#t-1:checked ~ .sliders label[for="t-2"],
+#t-2:checked ~ .sliders label[for="t-3"],
+#t-3:checked ~ .sliders label[for="t-4"],
+#t-4:checked ~ .sliders label[for="t-1"] {
+	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+	z-index: 3;
+}
+#t-2:checked ~ .sliders label[for="t-1"],
+#t-3:checked ~ .sliders label[for="t-2"],
+#t-4:checked ~ .sliders label[for="t-3"],
+#t-1:checked ~ .sliders label[for="t-4"] {
+	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+	z-index: 3;
+}
+#t-3:checked ~ .sliders label[for="t-1"],
+#t-4:checked ~ .sliders label[for="t-2"],
+#t-2:checked ~ .sliders label[for="t-4"],
+#t-1:checked ~ .sliders label[for="t-3"] {
+	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#t-1:checked ~ .sliders label[for="t-1"],
+#t-2:checked ~ .sliders label[for="t-2"],
+#t-3:checked ~ .sliders label[for="t-3"],
+#t-4:checked ~ .sliders label[for="t-3"],
+#t-4:checked ~ .sliders label[for="t-4"] {
+	z-index: 4;
+}

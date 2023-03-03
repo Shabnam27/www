@@ -1,0 +1,58 @@
+.container-7{
+    width:100%;
+    height: 40%;
+    background: linear-gradient(132deg, #752af7, #4e3a6e);
+
+}
+
+.new-7{
+    position: absolute;
+    background: linear-gradient(#752af7, #4e3a6e);
+    margin-top: -30px;
+    height: 600px;
+}
+
+.img-7{
+    width: 350px;
+    height: 150px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 35px;
+}
+
+.img-7:hover{
+    transform: translate(0, -20%);
+}
+
+.new-icons-7-1{
+    width: 90px;
+    height: 200px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.new-icons-7{
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+.bold-text{
+    font-size: 30px;
+    font-weight:bold;
+    color: blue;
+    margin-top: 10px;
+}
+
+.title-7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-title-7{
+    font-size: 50px;
+    font-style: italic;
+    color: #fff;
+}
